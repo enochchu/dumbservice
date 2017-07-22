@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1 Welcome to #{title}:
+	em A dumb way to serve dummy data.
+
+	p List of links:
+
+	ul
+		each service in services
+			li
+				a(href="/" + service) #{service}
